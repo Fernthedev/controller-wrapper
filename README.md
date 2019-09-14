@@ -37,7 +37,7 @@ controller.getAxes(); // Retrieves the axes states. It is updated every time you
 	<dependency>
 	    <groupId>com.github.Fernthedev</groupId>
 	    <artifactId>controller-wrapper</artifactId>
-	    <version>1.0</version> <!-- Check releases tab for version -->
+	    <version>1.0.1</version> <!-- Check releases tab for version -->
 	</dependency>
 ```
 
@@ -50,6 +50,6 @@ repositories {
 
 ```gradle
 dependencies {
-        implementation 'com.github.Fernthedev:controller-wrapper:1.0' // Check releases tab for version
+        implementation 'com.github.Fernthedev:controller-wrapper:1.0.1' // Check releases tab for version
 }
 ```
