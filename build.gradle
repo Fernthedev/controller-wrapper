@@ -2,6 +2,8 @@ plugins {
     id 'java'
     id "io.freefair.lombok" version "4.1.0"
 }
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 group 'com.github.fernthedev'
 version '1.0-SNAPSHOT'
