@@ -48,6 +48,6 @@ repositories {
 
 ```gradle
 dependencies {
-        implementation 'com.github.Fernthedev:controller-wrapper:-SNAPSHOT'
+        implementation 'com.github.Fernthedev:controller-wrapper:1.0' // Check releases tab for version
 }
 ```
