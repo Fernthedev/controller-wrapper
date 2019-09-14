@@ -1,6 +1,8 @@
 # controller-wrapper
 
 ## Some info
+[![](https://jitpack.io/v/Fernthedev/controller-wrapper.svg)](https://jitpack.io/#Fernthedev/controller-wrapper)
+
 This is a wrapper for GLFW controller with Xbox/DS4 or custom mappings. It is based off my controller mod for Minecraft and it has been decoupled into it's own project implemented in the mod now.
 
 ## Usage
