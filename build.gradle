@@ -50,15 +50,15 @@ dependencies {
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
-    from sourceSets.main.allSource
+    from sourceSets.main.java
 }
 task javadocJar(type: Jar, dependsOn: javadoc) {
     from javadoc.destinationDir
 }
 
 artifacts {
-    archives sourcesJar
     archives javadocJar
+    archives sourcesJar
 }
 
 build.dependsOn sourcesJar
@@ -68,12 +68,16 @@ publishing {
         mavenJava(MavenPublication) {
             from components.java
 
-            groupId = 'fernthedev'
-            artifactId = 'com.github.fernthedev.fernapi'
+            groupId = this.group;
+            artifactId = this.archivesBaseName
             version = this.version
 
             artifact sourcesJar {
                 classifier "sources"
+            }
+            
+            artifact javadocJar {
+                classifier "javadoc"
             }
         }
     }
